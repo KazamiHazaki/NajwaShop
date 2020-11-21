@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".login_act"
+    android:theme="@style/MyMaterialTheme"
+    android:background="#F4A261"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="266dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/logo_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:transitionName="logo_name"/>
+
+    <TextView
+        android:id="@+id/header_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/header_login"
+        android:textColor="#640E23"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:transitionName="logo_text"/>
+
+    <TextView
+        android:id="@+id/sub_log2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/forgot_password"
+        android:textColor="#640E23"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+
+        android:transitionName="forgot_pass_tran"/>
+
+    <TextView
+        android:id="@+id/sub_log3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:text="@string/sub_log"
+        android:textColor="#640E23"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_log"
+        android:transitionName="logo_sub_text"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="291dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="76dp"
+        android:textColorHint="#640E23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:transitionName="fullname_tran">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/sub_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/acme"
+            android:text="@string/sub_log"
+            android:textColor="#640E23"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="291dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:textColorHint="#640E23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:passwordToggleEnabled="true"
+        android:transitionName="pass_tran">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/SignInBtn"
+        android:layout_width="289dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#E76F51"
+        android:text="@string/sign_in"
+        app:backgroundTint="#E76F51"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_log2"
+        android:transitionName="signUp_tran"/>
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="291dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:background="#00E76F51"
+        android:text="@string/no_account"
+        app:backgroundTint="#B2E76F51"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInBtn"
+        android:transitionName="alreadyAcc_tran"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

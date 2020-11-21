@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">NajwaShop</string>
+    <string name="label">Username</string>
+    <string name="username">Username</string>
+    <string name="fullname">Fullname</string>
+    <string name="email_address">Email Address</string>
+    <string name="number_phone">Number Phone</string>
+    <string name="password">Password</string>
+    <string name="logo_login">logo_login</string>
+    <string name="i_already_have_an_account">I already have an account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome To Najwa</string>
+    <string name="sub_welcom">Fill in the fields below to register</string>
+    <string name="header_login">I\'m waiting for you,</string>
+    <string name="sub_log">Please login First</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">I Dont Have an Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="log_out">Log Out</string>
+    <string name="gamis">gamis</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="splashscreenlogo">SplashScreenLogo</string>
+</resources>
